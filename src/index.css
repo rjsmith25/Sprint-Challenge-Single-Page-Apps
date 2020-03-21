@@ -31,3 +31,31 @@ main {
 header h1 {
   text-align: center;
 }
+
+/* characterlist */
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* search form */
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.search-form input {
+  width: 300px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  font-size: 32px;
+  margin-left: 150px;
+}
