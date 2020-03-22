@@ -2,6 +2,7 @@ import React from "react";
 
 export default function SearchForm({ searchTerm, setSearchTerm }) {
   function onChangeHandler(e) {
+    e.preventDefault();
     setSearchTerm(e.target.value);
   }
   return (
