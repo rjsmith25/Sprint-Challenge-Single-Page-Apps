@@ -4,6 +4,7 @@ import SearchForm from "./SearchForm.js";
 import styled from "styled-components";
 import axios from "axios";
 import useLocalStorage from "react-use-localstorage";
+import { Link } from "react-router-dom";
 
 const CharacterListStyles = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ export default function CharacterList() {
 
   return (
     <>
+      <Link to="/">Home</Link>
       <SearchForm searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <CharacterListStyles>
         {Error ? (
